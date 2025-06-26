@@ -1,10 +1,18 @@
 ---
 import Header from "../components/Header.astro"
 import HeroSection from "../components/HeroSection.astro"
+import StatsCard from "../components/StatsCard.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-  <Header />
-  <HeroSection />
+  <div
+    class="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900"
+  >
+    <Header />
+    <main class="container mx-auto px-4 py-8">
+      <HeroSection />
+      <StatsCard />
+    </main>
+  </div>
 </Layout>
