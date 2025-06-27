@@ -1,0 +1,75 @@
+---
+import { Music, Heart, Play, ExternalLink } from "@lucide/astro"
+---
+
+<section class="mb-12">
+  <div
+    class="bg-black/40 border border-pink-500/30 backdrop-blur-sm rounded-lg"
+  >
+    <div class="p-6">
+      <h3 class="text-white text-xl font-semibold flex items-center gap-2 mb-6">
+        <Music class="h-6 w-6 text-pink-400" />
+        TikTok Highlights
+      </h3>
+
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <!-- TikTok 1 -->
+        <div
+          class="relative group cursor-pointer rounded-lg overflow-hidden aspect-[9/16]"
+        >
+          <img
+            src="https://dummyimage.com/250x150/ffffff/ffffff"
+            alt="TikTok video"
+            class="object-cover w-full h-full"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <Play class="h-8 w-8 text-white" />
+          </div>
+          <div
+            class="absolute bottom-2 left-2 text-white text-xs flex items-center gap-1"
+          >
+            <Heart class="h-4 w-4 inline" />
+            45K
+          </div>
+        </div>
+
+        <!-- TikTok 2 -->
+        <div
+          class="relative group cursor-pointer rounded-lg overflow-hidden aspect-[9/16]"
+        >
+          <img
+            src="https://dummyimage.com/250x150/ffffff/ffffff"
+            alt="
+            TikTok
+            video"
+            class="object-cover w-full h-full"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <Play class="h-8 w-8 text-white" />
+          </div>
+          <div
+            class="absolute bottom-2 left-2 text-white text-xs flex items-center gap-1"
+          >
+            <Heart class="h-4 w-4 inline" />
+            32K
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Button -->
+      <div class="text-center">
+        <a
+          href="#"
+          class="inline-flex items-center justify-center px-4 py-2 border border-pink-500/50 text-pink-400 hover:bg-pink-500/10 rounded-md text-sm font-medium"
+        >
+          View All TikToks
+          <ExternalLink class="h-4 w-4 ml-2" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
