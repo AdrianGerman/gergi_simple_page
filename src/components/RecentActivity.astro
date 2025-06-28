@@ -1,0 +1,47 @@
+---
+import { Youtube, Twitch, Instagram } from "@lucide/astro"
+---
+
+<section class="mb-12">
+  <div
+    class="bg-black/40 border border-blue-500/30 backdrop-blur-sm rounded-lg"
+  >
+    <div class="p-6">
+      <!-- Title -->
+      <h3 class="text-white text-xl font-semibold mb-6">Recent Activity</h3>
+
+      <!-- Activity List -->
+      <div class="space-y-4">
+        <!-- YouTube -->
+        <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
+          <Youtube class="h-8 w-8 text-red-400" />
+          <div class="flex-1">
+            <p class="text-white font-semibold">New video uploaded</p>
+            <p class="text-gray-400 text-sm">Epic Gaming Moments Compilation</p>
+          </div>
+          <span class="text-gray-400 text-sm">2 days ago</span>
+        </div>
+
+        <!-- Twitch -->
+        <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
+          <Twitch class="h-8 w-8 text-purple-400" />
+          <div class="flex-1">
+            <p class="text-white font-semibold">Streamed for 6 hours</p>
+            <p class="text-gray-400 text-sm">Cyberpunk 2077 playthrough</p>
+          </div>
+          <span class="text-gray-400 text-sm">3 days ago</span>
+        </div>
+
+        <!-- Instagram -->
+        <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
+          <Instagram class="h-8 w-8 text-pink-400" />
+          <div class="flex-1">
+            <p class="text-white font-semibold">Posted new photo</p>
+            <p class="text-gray-400 text-sm">Behind the scenes of my setup</p>
+          </div>
+          <span class="text-gray-400 text-sm">1 week ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
