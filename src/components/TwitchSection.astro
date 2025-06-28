@@ -20,14 +20,14 @@ import { Twitch, Users, TrendingUp, Play } from "@lucide/astro"
         </span>
       </div>
 
-      <!-- Content -->
-      <div class="grid md:grid-cols-2 gap-6">
+      <!-- Grid Content -->
+      <div class="grid md:grid-cols-[minmax(0,320px)_1fr] gap-6 items-start">
         <!-- Stream Preview -->
-        <div class="relative rounded-lg overflow-hidden">
+        <div class="relative rounded-lg overflow-hidden aspect-video">
           <img
             src="/placeholder.svg?height=300&width=500"
             alt="Stream preview"
-            class="w-full h-auto object-cover"
+            class="w-full h-full object-cover"
           />
           <div
             class="absolute inset-0 bg-black/50 flex items-center justify-center text-center text-white"
@@ -63,7 +63,7 @@ import { Twitch, Users, TrendingUp, Play } from "@lucide/astro"
           <a
             href="https://twitch.tv"
             target="_blank"
-            class="inline-flex items-center justify-center w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-md text-sm font-medium"
+            class="inline-flex items-center justify-center px-4 py-2 bg-fuchsia-600 hover:bg-fuchsia-700 text-white rounded-md text-sm font-medium"
           >
             <Twitch class="h-4 w-4 mr-2" />
             Watch on Twitch
