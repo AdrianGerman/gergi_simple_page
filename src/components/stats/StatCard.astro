@@ -1,0 +1,11 @@
+---
+const { icon: Icon, color, value, label, borderColor } = Astro.props
+---
+
+<div
+  class={`bg-black/40 border ${borderColor} backdrop-blur-sm p-4 text-center rounded-lg`}
+>
+  <Icon class={`h-8 w-8 ${color} mx-auto mb-2`} />
+  <div class="text-2xl font-bold text-white">{value}</div>
+  <div class="text-sm text-gray-400">{label}</div>
+</div>
