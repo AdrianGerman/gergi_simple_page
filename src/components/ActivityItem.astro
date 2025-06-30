@@ -1,0 +1,12 @@
+---
+const { icon: Icon, title, subtitle, date, color } = Astro.props
+---
+
+<div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
+  <Icon class={`h-8 w-8 ${color}`} />
+  <div class="flex-1">
+    <p class="text-white font-semibold">{title}</p>
+    <p class="text-gray-400 text-sm">{subtitle}</p>
+  </div>
+  <span class="text-gray-400 text-sm">{date}</span>
+</div>
