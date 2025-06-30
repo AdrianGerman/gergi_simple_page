@@ -7,6 +7,9 @@ import {
   Music,
   Heart
 } from "@lucide/astro"
+import GitHub from "./icons/GitHub.astro"
+import Discord from "./icons/Discord.astro"
+import X from "./icons/X.astro"
 ---
 
 <section class="mb-12">
@@ -51,7 +54,7 @@ import {
       target="_blank"
       class="h-16 bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center gap-2 rounded-lg"
     >
-      <Twitter class="h-6 w-6" />
+      <X class="h-6 w-6" />
       Twitter
     </a>
     <a
@@ -59,9 +62,7 @@ import {
       target="_blank"
       class="h-16 bg-blue-700 hover:bg-blue-800 text-white flex items-center justify-center gap-2 rounded-lg"
     >
-      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
-        ><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515..."></path></svg
-      >
+      <Discord class="h-6 w-6" />
       Discord
     </a>
     <a
@@ -77,9 +78,7 @@ import {
       target="_blank"
       class="h-16 bg-gray-800 hover:bg-gray-700 text-white flex items-center justify-center gap-2 border border-white/20 rounded-lg"
     >
-      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
-        ><path d="M12 0c-6.626 0-12 5.373-12 12..."></path></svg
-      >
+      <GitHub class="h-6 w-6" />
       GitHub
     </a>
   </div>
