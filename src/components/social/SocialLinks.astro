@@ -1,0 +1,71 @@
+---
+import { Youtube, Twitch, Instagram, Music, Heart } from "@lucide/astro"
+import GitHub from "../icons/GitHub.astro"
+import Discord from "../icons/Discord.astro"
+import X from "../icons/X.astro"
+
+import SocialButton from "./SocialButton.astro"
+
+// array de redes sociales
+const links = [
+  {
+    label: "YouTube",
+    icon: Youtube,
+    href: "https://youtube.com",
+    classes: "bg-red-600 hover:bg-red-700"
+  },
+  {
+    label: "Twitch",
+    icon: Twitch,
+    href: "https://twitch.tv",
+    classes: "bg-purple-600 hover:bg-purple-700"
+  },
+  {
+    label: "Instagram",
+    icon: Instagram,
+    href: "https://instagram.com",
+    classes:
+      "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+  },
+  {
+    label: "TikTok",
+    icon: Music,
+    href: "https://tiktok.com",
+    classes: "bg-black hover:bg-gray-900 border border-white/20"
+  },
+  {
+    label: "Twitter",
+    icon: X,
+    href: "https://twitter.com",
+    classes: "bg-blue-500 hover:bg-blue-600"
+  },
+  {
+    label: "Discord",
+    icon: Discord,
+    href: "https://discord.com",
+    classes: "bg-blue-700 hover:bg-blue-800"
+  },
+  {
+    label: "Patreon",
+    icon: Heart,
+    href: "https://patreon.com",
+    classes:
+      "bg-gradient-to-r from-orange-400 to-pink-400 hover:from-orange-500 hover:to-pink-500"
+  },
+  {
+    label: "GitHub",
+    icon: GitHub,
+    href: "https://github.com",
+    classes: "bg-gray-800 hover:bg-gray-700 border border-white/20"
+  }
+]
+---
+
+<section class="mb-12">
+  <h3 class="text-3xl font-bold text-white mb-6 text-center">
+    Connect With Me
+  </h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {links.map((link) => <SocialButton {...link} />)}
+  </div>
+</section>
