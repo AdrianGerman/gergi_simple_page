@@ -1,0 +1,38 @@
+---
+import { Youtube, Play } from "@lucide/astro"
+import VideoCard from "./VideoCard.astro"
+
+const videos = [
+  {
+    thumbnail: "https://dummyimage.com/300x200/ffffff/ffffff",
+    title: "Epic Gaming Moments Compilation",
+    views: "125K views",
+    date: "2 days ago",
+    duration: "12:34",
+    icon: Play
+  },
+  {
+    thumbnail: "https://dummyimage.com/300x200/ffffff/ffffff",
+    title: "Tech Review: Latest Gaming Setup",
+    views: "89K views",
+    date: "5 days ago",
+    duration: "8:45",
+    icon: Play
+  }
+]
+---
+
+<section class="mb-12">
+  <div class="bg-black/40 border border-red-500/30 backdrop-blur-sm rounded-lg">
+    <div class="p-6">
+      <h3 class="text-white text-xl font-semibold flex items-center gap-2 mb-6">
+        <Youtube class="h-6 w-6 text-red-400" />
+        Latest YouTube Videos
+      </h3>
+
+      <div class="space-y-8">
+        {videos.map((video) => <VideoCard {...video} />)}
+      </div>
+    </div>
+  </div>
+</section>
